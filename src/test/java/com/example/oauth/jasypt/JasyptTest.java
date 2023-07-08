@@ -12,14 +12,14 @@ public class JasyptTest {
     @Test
     public void jasyptTest() {
         // 테스트를 돌려보기 위해서 VMOptions에 삽입해놓은 암호를 그대로 붙여넣음
-        String password = "random";
+        String password = "VMOptionPassword";
 
         PooledPBEStringEncryptor encryptor = new PooledPBEStringEncryptor();
         encryptor.setPoolSize(4);
         encryptor.setPassword(password);
         encryptor.setAlgorithm("PBEWithMD5AndTripleDES");
 
-        String content = "targetcontent";    // 암호화 할 내용
+        String content = "secretkey";    // 암호화 할 내용
         String encryptedContent = encryptor.encrypt(content); // 암호화
         String decryptedContent = encryptor.decrypt(encryptedContent); // 복호화
 
