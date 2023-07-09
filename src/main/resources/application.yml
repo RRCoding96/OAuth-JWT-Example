@@ -48,3 +48,8 @@ kakao:
   client:
     id: ENC(T6o3EY0Bmrmjv1QZzUtyBK3pjB6J/MZiUP+Ccwkl7aQ5hDVQik2PQoQO10hLgfXX) # REST API 키
     secret: ENC(j/M1u3e5sFY9iOXl7/I1OdNfhD8ztDsj4Ysj9AWF8CpUV+lUuwTb7Gjy9YSmvwij) # 보안 - Client Secret
+
+token:
+  secret: ENC(ebzB5G3Tc11BzxSgr1SGC7OIW/VtWUdPJImEv3YzS+cO+5eAYk0GP/ov+Mbbrbia) # 임의의 문자열
+  access-token-expiration-time: 900000  # 15분 1000(ms) x 60(s) x 15(m)
+  refresh-token-expiration-time: 1209600000 # 2주 1000(ms) x 60 (s) x 60(m) x 24(h) x 14(d)
